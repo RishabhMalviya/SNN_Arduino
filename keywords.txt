@@ -1,0 +1,38 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Neuron	KEYWORD1
+Network	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+C	KEYWORD2
+gL	KEYWORD2
+EL	KEYWORD2
+VT	KEYWORD2
+Vspike	KEYWORD2
+spike		KEYWORD2
+inputPin	KEYWORD2
+outputPin	KEYWORD2
+inputCurrent	KEYWORD2
+setInputPin	KEYWORD2
+setOutputPin	KEYWORD2
+calculateMembranePotential	KEYWORD2
+LED_Output	KEYWORD2
+
+connectivityMatrix	KEYWORD2
+neuronCount	KEYWORD2
+sensoryNeuronCount	KEYWORD2
+sensoryNeurons	KEYWORD2
+defaultOutPins	KEYWORD2
+defaultInputPins	KEYWORD2
+times	KEYWORD2
+setConnectivityMatrix	KEYWORD2
+Neurons	KEYWORD2
+setSensoryNeurons	KEYWORD2
+issueSpikes	KEYWORD2
+updateNeurons	KEYWORD2
+Visualize	KEYWORD2
