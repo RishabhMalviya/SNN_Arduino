@@ -12,14 +12,9 @@ class Neuron{
     float Vspike;
     
    public:
-    /*
-     * Only sensory neurons have an inputPin. 
-     * Every neuron toggles it's outputPin when it spikes. 
-     * The outputPin is connectected to the spikePin.
-     * spikePins trigger pinChangeInterrupts that cause the downstream neurons to increment their currents.
-    */
     int inputPin, outputPin; 
-    float inputCurrent, membranePotential;
+    float membranePotential;
+    long int inputCurrent;
     boolean spike;    
     
     Neuron();

@@ -8,7 +8,7 @@
 
 #define MAX_NEURONS 6
 
-const int Network::defaultOutPins[MAX_NEURONS] = {7, 4, 2, 1, 0, 6};
+const int Network::defaultOutPins[MAX_NEURONS] = {7, 6, 5, 4, 3, 2};
 const int Network::defaultInputPins[MAX_NEURONS] = {A0, A1, A2, A3, A4, A5};
 int Network::dt;
 /*CONSTRUCTORS*/
@@ -106,14 +106,8 @@ void Network::setSensoryNeurons(int* sensoryNeuronIDs, int sensoryNeuronCount_){
 };
 
 void Network::updateNeurons(){
-  static int presentTime = micros();
-
   for(int i=0; i<neuronCount; i++){
-    presentTime = micros();
-    Neurons[i].calculateMembranePotential(dt);//((float)((presentTime-initTimes[i])/1000));
-    //Serial.println((float)((presentTime-initTimes[i])/1000));
-    //Serial.println(Neurons[i].membranePotential); Serial.println();
-    //times[i] = presentTime;
+    Neurons[i].calculateMembranePotential(dt);
   }
 
 };
